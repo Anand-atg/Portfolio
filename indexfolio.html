@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="STYLE22.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: #111;
+      margin: 0;
+    }
+
+    .page-section {
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tools-ticker {
+      overflow: hidden;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .tools-track {
+      display: flex;
+      width: max-content;
+      animation: scrollIcons 20s linear infinite;
+      gap: 30px;
+    }
+
+    .tools-track img {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    @keyframes scrollIcons {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .cta-buttons {
+      margin-top: 20px;
+    }
+
+    .cta-buttons .btn {
+      display: inline-block;
+      background-color: #00bcd4;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 10px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .cta-buttons .btn:hover {
+      background-color: #0097a7;
+    }
+
+    .resume-button {
+      display: inline-block;
+      background: #673ab7;
+      padding: 10px 20px;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    form input,
+    form textarea {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-family: inherit;
+    }
+
+    form button {
+      background: #2196f3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    nav.fixed-nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav.fixed-nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <header>
+    <div class="header-content">
+      <h1 class="logo">Portfolio</h1>
+      <nav class="fixed-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="glass page-section">
+      <h2>Hi, I'm Anand</h2>
+      <h3>MIS Analyst | Banking Operations </h3>
+      <p>Driving data-backed decisions with MIS and Business Intelligence solutions in banking & financial operations.</p>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/m-anand-b584151b8/" target="_blank">
+          <img src="linkedin.jpg" alt="LinkedIn" width="30">
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="glass page-section">
+      <img src="profile picture.jpg" alt="Profile Picture" class="profile-pic" />
+      <h2>About Me</h2>
+      <p>Hello! I'm Anand — a passionate MIS Analyst with a knack for transforming complex data into actionable insights.
+
+I specialize in crafting automated dashboards and reports that empower decision-makers in the banking sector to act with speed and confidence.
+
+My journey in data and banking began over 2.5 years ago at CAMS, supporting SBI's operations, where I learned the value of precision, timeliness, and client trust. As I transitioned into more advanced roles at Wipro on the RAKBANK-UAE project, I discovered my passion for transforming raw data into impactful business intelligence.
+
+Over time, I became the go-to person for MIS reporting, using SQL, Power BI, and Excel to automate workflows, track key KPIs, and optimize SLA/TAT performance. I’ve successfully handled settlement operations, managed high-volume payment processing, and ensured compliance—all while driving clarity through clean, reliable data.
+
+Beyond numbers, I focus on uncovering trends and customer insights that support brand awareness and strategic decisions. For me, data isn’t just about analysis—it’s about creating real business impact.
+
+Feel free to explore my projects or connect with me on LinkedIn — let’s talk data!.</p>
+    </section>
+
+    <section id="skills" class="glass page-section">
+      <h2>Skills</h2>
+      <div class="tools-ticker">
+        <div class="tools-track">
+          <img src="excel.png" alt="Excel">
+      <img src="power-bl.png" alt="Power BI">
+      <img src="mysql.png" alt="MySQL">
+      <img src="python.png" alt="Python">
+      <img src="tableau.png" alt="Tableau">
+      <img src="figma.png" alt="Figma">
+      <img src="Azure.png" alt="Azure">
+      <img src="Visual Studio Code.jpg" alt="VS Code">
+      <img src="chat-gpt.png" alt="ChatGPT">
+      <img src="Microsoft Office.png" alt="Microsoft Office">
+    
+          <!-- loop -->
+          <img src="excel.png" alt="Excel">
+      <img src="power-bl.png" alt="Power BI">
+      <img src="mysql.png" alt="MySQL">
+      <img src="python.png" alt="Python">
+      <img src="tableau.png" alt="Tableau">
+      <img src="figma.png" alt="Figma">
+      <img src="Azure.png" alt="Azure">
+      <img src="Visual Studio Code.jpg" alt="VS Code">
+      <img src="chat-gpt.png" alt="ChatGPT">
+      <img src="Microsoft Office.png" alt="Microsoft Office">
+    </div>
+      </div>
+    </section>
+
+    <section id="projects" class="glass page-section">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="EV MARKET.png" alt="Ev indian market Analysis dashboarh">
+          <h3>Ev Indian Market Analysis</h3>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="sales 1.png" alt="Sales Dashboard">
+          <h3>Sales Power BI Dashboard</h3>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="hr dahboard.png" alt="HR Dashboard">
+          <h3>HR Power BI Dashboard</h3>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="dashboard netfilx.png" alt="Netfilx Dashboard">
+          <h3>Netfilx Power BI Dashboard</h3>
+          <a href="#">View Project</a>
+      </div>
+    </section>
+
+    <section id="certificates" class="glass page-section">
+      <h2>My Certificates</h2>
+      <div class="certifications-grid">
+        <div class="certification-card">
+          <img src="master programin ba.jpg" alt="Certificate 1">
+          <h3>Master Program in Business &  Data Analysis</h3>
+        </div>
+        <div class="certification-card">
+          <img src="cfi excel.png" alt="Certificate 2">
+          <h3>Fundemental of data analyst in Excel </h3>
+        </div>
+        <div class="certification-card">
+          <img src="ibm python.png" alt="Certificate 2">
+          <h3>data analyst in Python </h3>
+        </div>
+         <div class="certification-card">
+          <img src="deliotte.png" alt="Certificate 2">
+          <h3> data analyst -deloitte virtual internship by forage </h3>
+        </div>
+         <div class="certification-card">
+          <img src="tata da.png" alt="Certificate 2">
+          <h3>data visualisation - TATA virtaul internship by forage </h3>
+        </div>
+         <div class="certification-card">
+          <img src="statistics.png" alt="Certificate 2">
+          <h3>statistics for Data science  -  by Simplilearn </h3>
+        </div>
+         <div class="certification-card">
+          <img src="tableau certificate .png" alt="Certificate 2">
+          <h3> tableau  -  by Great learning </h3>
+        </div>
+          <div class="certification-card">
+          <img src="goldman.png" alt="Certificate 2">
+          <h3> Goldman Sachs Excel 
+            Skills for Business </h3>
+        </div>
+    </section>
+
+    <section id="resume" class="glass page-section">
+      <h2>Resume</h2>
+      <a href="M ANAND.docx" download class="resume-button">Download My Resume</a>
+    </section>
+
+  <section id="contact" class="glass page-section">
+  <h2>Contact Me</h2>
+  <p>You can reach me by filling out the form below. I’ll get back to you shortly!</p>
+
+  <form action="https://formspree.io/f/movljnkg" method="POST" class="contact-form">
+    <label>
+      Your Name:
+      <input type="text" name="name" placeholder="Your Name" required>
+    </label>
+
+    <label>
+      Your Email:
+      <input type="email" name="email" placeholder="Your Email" required>
+    </label>
+
+    <label>
+      Your Message:
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    </label>
+
+    <button type="submit" class="submit-button">Send Message</button>
+  </form>
+</section>
+  </main>
+  <script>
+    const sections = document.querySelectorAll(".page-section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    function showSection(id) {
+      sections.forEach(section => {
+        section.style.display = section.id === id ? "block" : "none";
+      });
+    }
+
+    showSection("home");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        showSection(targetId);
+      });
+    });
+  </script>
+</body>
+
+</html>
